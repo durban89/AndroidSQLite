@@ -63,7 +63,6 @@ public class ApplicationTest extends ApplicationTestCase<Application> {
     @Test
     public void listDB(){
         PersonService service = new PersonDao(getContext());
-        String[] params = {"1"};
         List<Map<String, String>> list = service.listPerson(null);
         System.out.println("listDB ------>" + list.toString());
     }
